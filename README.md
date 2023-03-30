@@ -21,8 +21,8 @@ func main() {
 	// Set to false to generate lower-case names
 	generator.Capitalize = false
 
-	// If you want to generate rhyming names like Kind Kiwi, Amazing Aardvark, Lucky Lemur, etc, set this to true
-	generator.Rhyme = true
+	// If you want to generate alliterative names like Kind Kiwi, Amazing Aardvark, Lucky Lemur, etc, set this to true
+	generator.Alliterate = true
 
 	// If you want dashes or underscores instead of spaces, set Separator to your desired character(s)
 	generator.Separator = "-"

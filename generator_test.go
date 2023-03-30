@@ -19,9 +19,9 @@ func TestCapitalize(t *testing.T) {
 	}
 }
 
-func TestRhyme(t *testing.T) {
+func TestAlliterate(t *testing.T) {
 	generator := New()
-	generator.Rhyme = true
+	generator.Alliterate = true
 
 	for i := 0; i < 100; i++ {
 		name := generator.Generate()

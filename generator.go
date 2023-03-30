@@ -9,14 +9,14 @@ import (
 
 type Generator struct {
 	Capitalize bool
-	Rhyme      bool
+	Alliterate bool
 	Separator  string
 }
 
 func New() *Generator {
 	return &Generator{
 		Capitalize: true,
-		Rhyme:      false,
+		Alliterate: false,
 		Separator:  " ",
 	}
 }
@@ -25,7 +25,7 @@ func (g *Generator) Generate() string {
 	noun := Data.Nouns[rand.Intn(len(Data.Nouns))]
 
 	var adjectives []string
-	if g.Rhyme {
+	if g.Alliterate {
 		adjectives = lo.Filter(Data.Adjectives, func(adjective string, idx int) bool {
 			return strings.HasPrefix(adjective, noun[0:1])
 		})

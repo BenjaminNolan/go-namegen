@@ -8,7 +8,7 @@ import (
 
 var (
 	capitalize bool
-	rhyme      bool
+	alliterate bool
 	separator  string
 )
 
@@ -22,7 +22,7 @@ func main() {
 	}
 
 	cmd.Flags().BoolVarP(&capitalize, "capitalize", "c", true, "Capitalize the first letter of words")
-	cmd.Flags().BoolVarP(&rhyme, "rhyme", "r", false, "Generate rhyming names, eg, 'Awesome Antelope' or 'Clever Cat'")
+	cmd.Flags().BoolVarP(&alliterate, "alliterate", "a", false, "Generate alliterative names, eg, 'Awesome Antelope' or 'Clever Cat'")
 	cmd.Flags().StringVarP(&separator, "separator", "s", " ", "The separator between words, eg, '-', ' ', or '_'")
 
 	if err := cmd.Execute(); err != nil {
@@ -34,7 +34,7 @@ func generateName() {
 	generator := namegen.New()
 
 	generator.Capitalize = capitalize
-	generator.Rhyme = rhyme
+	generator.Alliterate = alliterate
 	generator.Separator = separator
 
 	println(generator.Generate())

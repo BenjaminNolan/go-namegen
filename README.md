@@ -2,6 +2,10 @@
 
 This package generates random names for teams and similar things such as Xenial Giraffe, Happy Rabbit, etc.
 
+## Why? There's, like, thirty already!
+
+Yeah, but they keep generating things like `fat-cow` and `obese-cat`, which we didn't really want when generating random team names for [Comnoco](https://comnoco.com)!
+
 ## Install
 
 ```sh

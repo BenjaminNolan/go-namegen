@@ -237,5 +237,15 @@ var Data = &GeneratorData{
 		"wildebeest",
 		"wolf",
 		"zebra",
+
+		// Our pets' names!
+		"athena",    // 🐱
+		"daisy",     // 🐱
+		"dexter",    // 🐱
+		"henrietta", // 🐔
+		"merlin",    // 🐶
+		"mildred",   // 🐔
+		"riga",      // 🐱
+		"rollo",     // 🐶
 	},
 }
